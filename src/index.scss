@@ -1,0 +1,203 @@
+body {
+    font-family: 'Alexandria', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+// buttons for app
+.button {
+    &-primary {
+        font-family: 'Alexandria', sans-serif;
+        background-color: #fff;
+        border: 1px solid #9f51e7;
+        border-radius: 20px;
+        outline: none;
+        padding: .5rem;
+        width: 60%;
+        color: #9f51e7;
+        cursor: pointer;
+        margin: .1rem 0;
+
+        &:hover {
+            border: none;
+            transform: scale(1.01);
+        }
+
+        @media screen and (max-width: 500px) {
+            width: 100%;
+        }
+    }
+
+    &-secondary {
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 3px;
+        font-family: 'Alexandria', sans-serif;
+        font-weight: 400;
+        color: #636363;
+        font-size: 1rem;
+        padding: .2rem .4rem;
+
+        &:hover {
+            border: none;
+            transform: scale(1.1);
+        }
+    }
+
+    &-delete {
+        color: #30aa3a;
+    }
+
+    &-edit {
+        color: #167abd;
+    }
+}
+// task 
+.task {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin: 3rem auto;
+        text-align: center;
+        font-size: 3rem;
+        color: #1d1c1c;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    // task create
+    &__create {
+        background-color: #9f51e7;
+        border-radius: 5px;
+        padding: 1rem 3rem;
+        margin: 0 8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        color: #fff;
+
+        @media screen and (max-width: 1000px) {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            text-align: center;
+            align-items: center;
+        }
+
+        h3 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            padding: 0;
+            margin: .5rem 0;
+        }
+
+        form {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin: .5rem 0;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+
+            button {
+                background-color: #fff;
+                border: none;
+                outline: none;
+                padding: .5rem;
+                color: #4d4d4d;
+
+                &:hover {
+                    color: #9f51e7;
+                }
+            }
+        }
+    }
+
+    // task show
+    &__show {
+        border: 1px solid #aaa6a6;
+        background-color: #fff;
+        padding: .2rem .5rem;
+        padding-bottom: 0;
+        display: flex;
+        min-width: 20%;
+        margin: .5rem;
+        margin-left: 0;
+        border-radius: 8px;
+        box-shadow: 5px 5px 8px -4px rgba(127, 127, 127, 0.38);
+        justify-content: space-between;
+        color: #1d1c1c;
+
+        @media screen and (max-width:1000px) {
+            min-width: 30%;
+        }
+
+        @media screen and (max-width:800px) {
+            min-width: 40%;
+        }
+
+        @media screen and (max-width: 500px) {
+            min-width: 100%;
+        }
+
+        h3 {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .content {
+            margin-top: 1rem;
+        }
+
+        .actions {
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+
+    &__edit {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: .5rem 0;
+
+        input {
+            margin: 0;
+            margin-top: .5rem;
+            border: 1px solid #1d1c1c;
+            border-radius: 5px;
+            padding: .5rem;
+
+            &:focus {
+                border: 1px solid #9f51e7b7;
+                outline: none;
+            }
+        }
+        
+        button {
+            margin: 1rem 0;
+
+            &:hover {
+                background-color: #9f51e7;
+                color: #fff;
+            }
+        }
+    }
+
+}
