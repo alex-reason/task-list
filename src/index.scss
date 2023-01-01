@@ -9,12 +9,12 @@ body {
     &-primary {
         font-family: 'Alexandria', sans-serif;
         background-color: #fff;
-        border: 1px solid #9f51e7;
+        border: 1px solid #678983;
         border-radius: 20px;
         outline: none;
         padding: .5rem;
         width: 60%;
-        color: #9f51e7;
+        color: #678983;
         cursor: pointer;
         margin: .1rem 0;
 
@@ -76,7 +76,7 @@ body {
 
     // task create
     &__create {
-        background-color: #9f51e7;
+        background-color: #678983;
         border-radius: 5px;
         padding: 1rem 3rem;
         margin: 0 8rem;
@@ -123,7 +123,7 @@ body {
                 color: #4d4d4d;
 
                 &:hover {
-                    color: #9f51e7;
+                    color: #678983;
                 }
             }
         }
@@ -185,7 +185,7 @@ body {
             padding: .5rem;
 
             &:focus {
-                border: 1px solid #9f51e7b7;
+                border: 1px solid #67898388;
                 outline: none;
             }
         }
@@ -194,7 +194,7 @@ body {
             margin: 1rem 0;
 
             &:hover {
-                background-color: #9f51e7;
+                background-color: #678983;
                 color: #fff;
             }
         }
